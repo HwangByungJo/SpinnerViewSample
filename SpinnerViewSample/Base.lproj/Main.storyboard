@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SpinnerViewSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jmc-fh-VX9" customClass="SpinnerView" customModule="SpinnerViewSample" customModuleProvider="target">
+                                <rect key="frame" x="97" y="398" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="iRR-wQ-oBY"/>
+                                    <constraint firstAttribute="width" constant="100" id="w8Y-Bf-1nx"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="chk-pw-6ME" customClass="SpinnerViewObjC">
+                                <rect key="frame" x="237" y="398" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="PhI-BY-XTx"/>
+                                    <constraint firstAttribute="width" constant="100" id="ZSh-u0-hTt"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bq-YQ-0jI">
+                                <rect key="frame" x="97" y="357" width="100" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Objective-C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gik-n9-0HF">
+                                <rect key="frame" x="237" y="357" width="100" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="chk-pw-6ME" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="80" id="0Vk-4u-2si"/>
+                            <constraint firstItem="chk-pw-6ME" firstAttribute="leading" secondItem="gik-n9-0HF" secondAttribute="leading" id="4xe-nw-f8i"/>
+                            <constraint firstItem="chk-pw-6ME" firstAttribute="leading" secondItem="jmc-fh-VX9" secondAttribute="trailing" constant="40" id="IbP-NA-dBA"/>
+                            <constraint firstItem="chk-pw-6ME" firstAttribute="trailing" secondItem="gik-n9-0HF" secondAttribute="trailing" id="Lt3-8j-UrS"/>
+                            <constraint firstItem="jmc-fh-VX9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OpG-O2-bX5"/>
+                            <constraint firstItem="jmc-fh-VX9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TDF-4h-rG6"/>
+                            <constraint firstItem="jmc-fh-VX9" firstAttribute="top" secondItem="6bq-YQ-0jI" secondAttribute="bottom" constant="20" id="Z6c-Ny-7Nj"/>
+                            <constraint firstItem="jmc-fh-VX9" firstAttribute="trailing" secondItem="6bq-YQ-0jI" secondAttribute="trailing" id="c1e-Kh-t8k"/>
+                            <constraint firstItem="chk-pw-6ME" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="o0z-Am-YCT"/>
+                            <constraint firstItem="jmc-fh-VX9" firstAttribute="leading" secondItem="6bq-YQ-0jI" secondAttribute="leading" id="r3U-xA-4a3"/>
+                            <constraint firstItem="chk-pw-6ME" firstAttribute="top" secondItem="gik-n9-0HF" secondAttribute="bottom" constant="20" id="wNR-pO-heQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="108"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
